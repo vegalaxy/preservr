@@ -1,0 +1,93 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  min-height: 1200px;
+}
+body{
+	margin: 0;
+	padding: 0;
+	background: url(../images/water---4.jpg) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	font-family: arial;
+	position: relative;
+}
+.logo-holder img{
+	max-width: 300px;
+	width: 100%;
+	height: auto;
+	margin: 50px 0 5px;
+}
+.logo-holder h5{
+	margin-top: 0;
+}
+.scan-holder {
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    z-index: 1;
+    width: 100%;
+}
+.scan-holder img{
+	max-width: 200px;
+	width: 100%;
+	height: auto;
+	margin-top: 100px;
+	margin-bottom: 200px;
+}
+#default-poster{
+	background: none !important;
+}
+footer{
+	background: url(../images/footer.svg) center bottom;
+	background-size: contain;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 430px;
+    width: 100%;
+    z-index: 0;
+}
+model-viewer{
+	min-height: 400px;
+}
+.w-100{
+	width: 100%;
+}
+
+@media only screen and (max-width: 1400px){
+	html, body {
+	  height: 100%;
+	  margin: 0;
+	  min-height: 1000px;
+	}
+	model-viewer{
+		min-height: 300px;
+	}
+}
+@media only screen and (max-width: 1199px){
+	footer{
+		background-repeat: no-repeat;
+	}
+	html, body {
+	  height: 100%;
+	  margin: 0;
+	  min-height: 100%;
+	}
+	.scan-holder{
+		bottom: -40px;
+	}
+}
+@media only screen and (max-width: 767px){
+	.scan-holder img {
+	    margin-top: 20px;
+	}
+	.scan-holder {
+    display: none;
+}
+model-viewer{
+    max-height: 250px;
+    min-height: unset;
+}
+
+}
